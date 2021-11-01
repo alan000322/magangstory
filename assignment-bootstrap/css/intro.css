@@ -1,0 +1,56 @@
+/* body {
+    background-color: #000;
+} */
+/* intro */
+.intro-background {
+    background-image: url(../img/stonehouse.JPG);
+    background-position: top center;
+    background-size: cover; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+}
+.title-img {
+    max-width: 80%;
+}
+.intro2 {
+    background-image: url(../img/cat-stonehouse.JPG);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover; 
+    min-height: 100vh;
+}
+.intro3 {
+    background-image: url(../img/ocean.JPG);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover; 
+    min-height: 100vh;
+}
+.vh-align-center2 {
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+}
+.desp-rect2 {
+    width: 100vh;
+    height: 30vh;
+    background: rgba(51, 51, 51, 0.801);
+}
+.vh-align-center3 {
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+}
+.desp-rect3 {
+    width: 100vh;
+    height: 20vh;
+    background: rgba(51, 51, 51, 0.801);
+}
+.vh-align-center3-2 {
+    margin-top: 45vh;
+    margin-bottom: 45vh;
+}
+.desp-rect3-2 {
+    width: 100vh;
+    height: 10vh;
+    background: rgba(51, 51, 51, 0.801);
+}

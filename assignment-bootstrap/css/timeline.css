@@ -1,0 +1,13 @@
+.timeline {
+    background-color: rgb(26, 26, 26);
+    background-attachment: fixed;
+    height: 150vh
+}
+.lpic-timeline {
+    background-image: url(../img/stonehouse.JPG);
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    height: 145vh
+}
