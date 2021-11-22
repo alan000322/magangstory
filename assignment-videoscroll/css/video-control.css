@@ -1,0 +1,11 @@
+.video-basic {
+    position: fixed;
+    background-color: rgb(65, 65, 168);
+    
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    width: 100%    !important;
+    height: 100%   !important;
+    object-fit: fill;
+}
