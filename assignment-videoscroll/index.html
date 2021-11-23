@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/video-control.css">
     <link rel="stylesheet" href="css/vh.css">
+    <link rel="stylesheet" href="css/loading.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;500;600;700;900&display=swap"
@@ -43,7 +44,8 @@
     <section class="intro">
         <section class="video-part">
             <div class="container-fluid">
-                <video class="video-basic" height="100%" preload src="./magang.mov"></video>
+                <video class="video-basic" playsinline height="100%" preload src="./magang.mov"></video>
+                <!-- 確保safari可以運作playsinline -->
             </div>
             <div class="vh-400-bg-dark-transparent">
                 <div class="container vh-100 flex-column d-flex justify-content-center align-items-center">
@@ -129,15 +131,15 @@
     <section class="argue">
         <div class="container-fluid">
             <div class="row p-3 d-flex justify-content-center">
-                <div class="col-4 text-light fs-6 mt-5 pt-5">
+                <div class="col-md-4 text-light fs-6 mt-5 pt-5">
                     <div class="row d-flex justify-content-center">
-                        <div class="col hvh">
+                        <div class="colmd- hvh">
                             <p class="display-4 text-center ">14</p>
                             <p class="text-center">關於拆屋還地的民事訴訟</p>
                         </div>
                     </div>
                 </div>
-                <div class="lead col-5 text-light fs-6 mt-5 pt-5">
+                <div class="lead col-md-5 text-light fs-6 mt-5 pt-5">
                     <p class="py-1">2018年三、四月馬崗村居民幾戶陸續收到法院訴訟通知，劃開了原先村子安闐的日子。</p>
                     <p class="py-1">據了解，財團向地主收購土地，幾乎買下村落約一半土地的面積，近期開始對居民提出無權佔有的拆屋還地訴訟，全然否認原先地主與居民的基地租賃契約關係。 </p>
                     <p class="py-1">但對居民來說，從他們的祖先開始即世居於此，每年繳錢給地主，地主也是鄰居、大家都互相認識。</p>
@@ -150,7 +152,7 @@
         <div class="argue-pic-3"></div>
         <div class="container-fluid">
             <div class="row p-3 d-flex justify-content-center">
-                <div class="col-4 text-light fs-6">
+                <div class="col-md-4 text-light fs-6">
                     <div class="row d-flex justify-content-center">
                         <div class="col p-5 hvh">
                             <figure class="figure">
@@ -160,8 +162,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
-                <div class="lead col-5 text-light fs-6">
+                <div class="col-md-1"></div>
+                <div class="lead col-md-5 text-light fs-6">
                     <p class="py-1">
                         78歲的陳罔市居住在馬崗村多年，以洗海菜維生。因馬崗的大半土地被財團買走，忍不住嘆氣：「現在這邊土地都被財團買走，說要一坪一萬五叫我們搬走，那我們給他們（財團）一萬五，他們賣不賣阿？這邊可是我們一輩子的家，人沒辦法住，祖先（牌位）也沒辦法住了啊！」
                     </p>
@@ -172,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="judge pt-5">
+    <section class="judge vh-100-responsive pt-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <h3 class="text-center">法院判決整理</h3>
@@ -186,7 +188,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-md-7 table-judge">
+                <div class="col-lg-7 table-responsive">
                     <table class="table table-sm table-hover">
                         <thead>
                             <tr>
@@ -219,16 +221,16 @@
     </section>
     <section class="timeline">
         <div class="container-fluid">
-            <div class="row p-3 d-flex justify-content-center">
-                <div class="col-md-4 lpic-timeline">
-                    <div class="row d-flex justify-content-center mt-5 pt-5">
-                        <h4 class="text-center text-light py-3">近年居民提出文資保存的歷程</h4>
-                        <div class="col-4 form-check form-switch pb-2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-4 lpic-timeline px-5">
+                    <div class="row d-flex justify-content-center pt-5">
+                        <h4 class="text-center text-light py-4">居民提出文資保存的歷程</h4>
+                        <div class="col-xl-4 form-check form-switch pb-2">
                             <input class="form-check-input" type="radio" id="history" name="h" checked v-model="type"
                                 value="history">
                             <label class="form-check-label text-light" for="history">歷史建築</label>
                         </div>
-                        <div class="col-5 form-check form-switch pb-2">
+                        <div class="col-xl-5 form-check form-switch pb-2">
                             <input class="form-check-input" type="radio" id="town" name="h" v-model="type" value="town">
                             <label class="form-check-label text-light" for="town">聚落建築群</label>
                         </div>
@@ -252,9 +254,9 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-md-1"></div>
-                <div class="lead col-md-5 text-light fs-6">
-                    <div class="row d-flex flex-column justify-content-center pt-3 mt-3">
+                <div class="col-xl-1"></div>
+                <div class="lead col-xl-5 text-light fs-6 px-3">
+                    <div class="row d-flex flex-column justify-content-center pt-4 px-5 mt-3">
                         <p class="py-1 col">
                             2018下半年，幾位居民和相關團體向新北市文化局提報歷史建築和聚落建築群，試圖透過文資保存的方式，保留這裡百年石頭屋與樸實的產業與海女文化，也期望能因此讓居民免於迫遷危機。
                         </p>
@@ -262,11 +264,7 @@
                             多起訴訟持續，近期的兩起行政訴訟，包括財團（好魚田股份有限公司）針對新北市政府將兩處石頭屋訂為歷史建築提出撤銷訴訟，及居民針對新北市政府不予登記為聚落建築群提出撤銷訴訟，最終分別認定財團敗訴、居民勝訴。馬崗街的歷史建築暫時保住。
                             <br>
                             <br>
-                            <br>
-                            <br>
                             -
-                            <br>
-                            <br>
                             <br>
                             <br>
                             居民吳大哥在當地幫忙鄰居捕魚、現在幫人抓九孔、當潛水伕。問起石頭屋之於他是什麼樣的感情。又為什麼這些人會想要保存，這些東西真的這麼重要嗎？
